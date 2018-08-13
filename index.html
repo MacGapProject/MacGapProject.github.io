@@ -1,85 +1,160 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>MacGap</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+      <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>MacGap</title>
+    <!-- Material Icon CDN -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize CSS CDN -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Your custom styles -->
+      
+    <!-- Used as an example only to position the footer at the end of the page.
+    You can delete these styles or move it to your custom css file -->
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        }
+      main {
+        flex: 1 0 auto;
+      }
+      code{
+        display: block;
+        background-color: #757575;
+        border-radius: 0.5em;
+        padding: 1em;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
+      }
+      .spacer{
+        margin: 1em;
+      }
+    </style>
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>MacGap</h1>
+    <header>
+      <nav class="blue darken-1">
+        <div class="nav-wrapper">
+          <div class="container">
+            <a href="#" class="brand-logo">MacGap</a>
+            <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#">item1</a></li>
+              <li><a href="#">item2</a></li>
+              <li><a href="#">item3</a></li>
+              <li><a href="#">item4</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-menu">
+              <li>
+                    <a class="btn hoverable blue waves-effect waves-light" href="https://github.com/MacGapProject/MacGap2">View on GitHub</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+      <main>
+      <!-- Your content here -->
+      <div class="container">
+          <div class="row center">
+                <h1>MacGap</h1>
         <p>Build native OS X Apps with Web Technologies</p>
-        <p class="view"><a href="https://github.com/MacGapProject/MacGap2">View the Project on GitHub <small>MacGapProject</small></a></p>
-        <ul>
-          <li class="single"><a href="https://github.com/MacGapProject/MacGap2">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>What is MacGap?</h3>
-
-<p>
-  MacGap provides HTML/JS/CSS developers an Xcode project for developing native OS X App. These Apps run in OS X's WebView and take advantage of WebKit technologies.
-</p>  
-<p>
-  MacGap exposes a JavaScript API for OS X integration, such as displaying native notifications or writing data to a file. MacGap is extremely lightweight and nimble; a blank application weighs less than 1MB.
-</p>
-
-
-<h3>Getting Started</h3>
-<pre><code>
-  # Step 1 - Clone the Repository
-  $ git clone https://github.com/MacGapProject/MacGap2.git
-  
-  # Step 2 - Open the Project in Xcode
-  $ open MacGap2/MG.xcodeproj/
-  
-  # Step 3 - Build your App by editing public/index.html in Xcode  
-</code></pre>
-
-
-<h3>Mac App Store compatible</h3>
-
-<p>MacGap makes use of WebViews which is a standard feature that is available when developing native OS X apps within Xcode. The API that is added is also based on official API's provided by Apple. Therefore there are no dirty hacks, no embedded chrome browser or anything that would stand in your way for Mac App Store submission.</p>
-
-<h3>Documentation</h3>
-<p>
-  You can find MacGap's Documentation at <a href="https://macgapproject.github.io/documentation/">https://macgapproject.github.io/documentation/.</a>
-</p>
-
-<h3>Authors and Contributors</h3>
-<p>
-  <a href="https://github.com/rawcreative">rawcreative</a>,
-  <a href="https://github.com/tschundeee">tschundeee</a>,
-  <a href="https://github.com/jeff-h">jeff-h</a>,
-  <a href="https://github.com/maccman">maccman</a>,
-  <a href="https://github.com/encke">encke</a>,
-  <a href="https://github.com/zerosix">zerosix</a>,
-  <a href="https://github.com/christopherjones">christopherjones</a>
-</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>  
-  Having trouble with MacGap? Check out the documentation at <a href="https://macgapproject.github.io/documentation/">https://macgapproject.github.io/documentation/</a> or open an issue in our <a href="https://github.com/MacGapProject/MacGap2/issues">Issue Tracker</a> and we’ll help you sort it out.
-</p>
-      </section>
+        <a class="btn hoverable blue waves-effect waves-light" href="https://github.com/MacGapProject/MacGap2">View the Project on GitHub</a>
+        <div class="spacer"></div>
+<div class="card blue-grey darken-1">
+    <div class="card-content white-text">
+        <span class="card-title">What is MacGap?</span>
+        <p>
+                MacGap provides HTML/JS/CSS developers an Xcode project for developing native OS X App. These Apps run in OS X's WebView and take advantage of WebKit technologies.
+              </p>  
+              <p>
+                MacGap exposes a JavaScript API for OS X integration, such as displaying native notifications or writing data to a file. MacGap is extremely lightweight and nimble; a blank application weighs less than 1MB.
+              </p>
     </div>
-    <footer>
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+</div>
+<div class="card blue-grey darken-1">
+  <div class="card-content white-text">
+    <span class="card-title">Getting started</span>
+    <code>
+        # Step 1 - Clone the Repository<br>
+        $ git clone https://github.com/MacGapProject/MacGap2.git<br>
+        <br>
+        # Step 2 - Open the Project in Xcode<br>
+        $ open MacGap2/MG.xcodeproj/<br>
+        <br>
+        # Step 3 - Build your App by editing public/index.html in Xcode
+      </code>
+  </div>
+</div>
+  <div class="card blue-grey darken-1">
+    <div class="card-content white-text">
+      <span class="card-title">Mac App Store compatible</span>
+      <p>MacGap makes use of WebViews which is a standard feature that is available when developing native OS X apps within Xcode. The API that is added is also based on official API's provided by Apple. Therefore there are no dirty hacks, no embedded chrome browser or anything that would stand in your way for Mac App Store submission.</p>
+    </div>
+  </div>
+<div class="card blue-grey darken-1">
+  <div class="card-content white-text">
+    <span class="card-title">Documentation</span>
+    <p>You can find MacGap's Documentation <a href="https://macgapproject.github.io/documentation/">here</a></p>
+  </div>
+  
+</div>
+<div class="card blue-grey darken-1">
+  <div class="card-content white-text">
+    <span class="card-title">Authors and Contributors</span>
+    <p><a href="https://github.com/rawcreative">rawcreative</a>,
+      <a href="https://github.com/tschundeee">tschundeee</a>,
+      <a href="https://github.com/jeff-h">jeff-h</a>,
+      <a href="https://github.com/maccman">maccman</a>,
+      <a href="https://github.com/encke">encke</a>,
+      <a href="https://github.com/zerosix">zerosix</a>,
+      <a href="https://github.com/christopherjones">christopherjones</a>,
+      <a href="https://github.com/patrik-svobodik">patriksvobodik</a>
+    </p>
+  </div>
+  
+</div>
+<div class="card blue-grey darken-1">
+  <div class="card-content white-text">
+    <span class="card-title"></span>
+    <p>Having trouble with MacGap? Check out the <a href="https://macgapproject.github.io/documentation/">documentation</a> or open an issue in our <a href="https://github.com/MacGapProject/MacGap2/issues">Issue Tracker</a> and we’ll help you sort it out.</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+      
+    </main>
+    <footer class="page-footer blue darken-1">
+      <div class="container">
+        <div class="row">
+          
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+            Hosted on GitHub Pages — Made with MaterializeCSS by Patrik Svoboda (patakopecek)
+          <a class="grey-text text-lighten-4 right" href="#!">View on GitHub</a>
+        </div>
+      </div>
     </footer>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+    <!-- jQuery CDN -->
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Materialize JS CDN -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>
+      $("document").ready(function(){
+        $(".button-collapse").sideNav();
+      });
+    </script>
   </body>
 </html>
