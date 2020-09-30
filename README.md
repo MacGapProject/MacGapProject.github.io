@@ -1,4 +1,4 @@
-website
+website of MacGap
 =======
 
 The MacGap website
