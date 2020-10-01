@@ -1,4 +1,4 @@
-website
+An Amazing website please check out now!
 =======
 
 The MacGap website
