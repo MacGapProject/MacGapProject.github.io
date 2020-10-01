@@ -1,5 +1,5 @@
-website
+Our Website
 =======
 
-The MacGap website
+The Official MacGap Website:
 http://macgapproject.github.io
