@@ -1,5 +1,5 @@
-website
+Website
 =======
 
-The MacGap website
+The MacGap Website
 http://macgapproject.github.io
