@@ -1,4 +1,4 @@
-website
+website - An amazing site
 =======
 
 The MacGap website
